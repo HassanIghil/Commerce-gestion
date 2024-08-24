@@ -1,0 +1,143 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.demo {
+    font-family: Arial, sans-serif;
+    color: black;
+    text-align: justify;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    clip-path: polygon(0 0, 100% 0, 100% 77%, 0 96%);
+    padding-top: 5%;
+    padding-bottom:5%;
+    scroll-behavior: smooth;
+}
+
+.demo, .contact {
+    flex: 1;
+}
+
+nav {
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 20px 35px;
+}
+
+#header-text {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 10%;
+    font-size: 60px;
+    letter-spacing: -3px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.messaging {
+    float: left;
+    padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 45%;
+    background-color: rgb(234, 243, 252);
+    border-radius: 10px;
+    margin-bottom: 20%;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    color: black;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.text-content {
+    float: right;
+    font-size: medium;
+    margin-bottom: 20px;
+    width: 55%;
+    color: black;
+    padding-left:45px;
+    padding-right:20px;
+}
+
+h3 {
+    
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    padding-left:10px;
+}
+#socials {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: black;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+}
+
+.container {
+    float: 1;
+    margin-right: 20px;
+}
+
+.contact {
+    padding-left: 10px;
+    margin: 0;
+}
+
+
+.scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.scroll-top-button{
+    background-color: unset;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+

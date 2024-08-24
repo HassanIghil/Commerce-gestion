@@ -1,0 +1,50 @@
+<div class="page-container">
+    <div class="demo" >
+        <div class="demo-header">
+           
+            <h1 id="header-text"> <span id="Home-demo"></span>Demander une démo maintenant !</h1>
+            
+        </div>
+       
+    </div>
+
+    <div class="contact" >
+        <form class="messaging"   (submit)="onSubmit($event)">
+            <label for="fullName" >Full Name:</label>
+            <input type="text" id="fullName" [(ngModel)]="fullName" name="fullName" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" [(ngModel)]="email" name="email" required>
+          
+            <label for="message">Message:</label>
+            <textarea id="message" [(ngModel)]="message" name="message" required></textarea>
+          
+            <button class="btn" type="submit">Send Message</button>
+          
+            
+            <p *ngIf="confirmationMessage" style="color: green;">{{ confirmationMessage }}</p>
+          </form>
+          
+        
+
+        <div class="container">
+            <div class="text-content">
+                <h3>TOUTES LES QUESTIONS OU COMMENTAIRES</h3>
+                <p>Contactez-nous en utilisant les coordonnées ou simplement remplissez le formulaire de Contact!</p>
+            </div>
+
+            <div class="social-icons">
+                <p id="socials">Socials:</p> 
+                    <a href="https://www.facebook.com/gm.soft.1?mibextid=2JQ9oc"><img src="facebook.svg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/gmsoftbenimellal/"><img src="instagram.svg" alt="instagram"></a>
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- <div class="scroll-top">
+        <a href="/#Home"><button class="scroll-top-button"><i class="bi bi-arrow-up-square-fill"></i></button></a>
+    </div> -->
+</div>

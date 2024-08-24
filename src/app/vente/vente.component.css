@@ -1,0 +1,45 @@
+.vente{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 64, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vente-header{
+    padding: 3% 0%  0 18%;
+    display: flex;
+    flex-direction:row;
+    color: rgb(0, 64, 160);
+    font-size: 45px;
+    padding-left: 18px;
+    padding-bottom: 15%;
+}
+.vente-header2 {
+    display: flex;
+    flex-direction:row;
+    color: black;
+    padding-left: 18px;
+    padding-bottom: 0px;  background-color: aliceblue;
+    padding: 0 0%  0 3%;
+    /* clip-path: polygon( 13% 18%13% 18%, 13% 9%, 13% 9%, 14% 4%, 14% 4%, 18% 1%, 18% 1%, 27% 1%, 27% 1%, 97% 1%, 97% 5%, 100% 11%, 100% 11%, 100% 19%, 100% 19%, 100% 99%, 100% 99%, 0% 100%, 0% 100%, 0% 40%, 0% 40%); */
+
+}
+
+.imgcontent {
+    padding-top: 0;
+    flex-direction: column;
+    float:inline-end;
+
+}
+
+.textContent {
+    padding-top: 6%;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    flex-direction: column;
+}
+

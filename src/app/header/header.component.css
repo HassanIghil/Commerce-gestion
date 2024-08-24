@@ -1,0 +1,267 @@
+body {
+    background-image: url('/trianglify-lowres.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav {
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#h1text {
+    padding-top: 40px;
+    font-size: 70px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#h2text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 45%;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.demo {
+    display: flex;
+    float: right;
+    padding-top: 60px;
+    
+}
+
+.det {
+    padding-left: 15px;
+    padding-bottom: 6.5%;
+}
+
+.demander {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 20%;
+    height: 50px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a{text-decoration: none;}
+
+a:visited{
+    color: rgb(0, 0, 0);
+
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer{
+    overflow-x: hidden;
+    margin: 0;
+    padding-bottom: 3%;
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+    width: 100%;
+    margin-top: 2%;
+    padding-top: 2%;
+    color: black;
+    border-radius: 10px;
+}
+
+.demander-phone{
+    display: none;
+}
+.logo-item {
+    text-align: center;
+}
+
+.logos {
+    padding-bottom: 15px;
+}
+
+.stars {
+    font-size: xx-large;
+    color: blue;
+}
+
+.Reviews {
+    font-size: large;
+    font-weight: bold;
+}
+
+.lines {
+    padding-right: 10%;
+    border-right: 1px solid black;
+}
+
+.scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+button:hover{
+    background-color: rgb(0, 187, 255);
+    cursor: pointer;
+}
+
+.demo-phone{
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    body {
+        background-image: url('/trianglify-lowres.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        scroll-behavior: smooth;
+    }
+
+    nav {
+        justify-content: start;
+        align-items: center;
+        display: flex;
+        width: 120px;
+        padding: 10px 0px;
+
+    }
+    .demander{
+        display: none;
+    }
+
+    .demander-phone{
+    background-color: rgb(0, 21, 255);
+    display: flex;
+    height: 50px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 60px;
+    }
+a:visited{
+    color: azure;
+}
+
+    .demo{
+        display: none;
+    }
+    .demo-phone {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+    }
+    
+    .det {
+        padding-left: 0;
+        padding-bottom: 6.5%;
+    }
+    
+    
+#h1text {
+    padding-top: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 10px;
+    text-align: left;
+}
+
+#h2text {
+    padding-top: 20px;
+    color: black;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    line-height: 1.5;
+    font-size: 18px;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+footer{
+    overflow-x: hidden;
+    margin: 0;
+    padding-bottom: 3%;
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+.footer-container {
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    width: 100%;
+    margin-top: 2%;
+    padding-top: 2%;
+    color: black;
+    border-radius: 10px;
+}
+
+.logo-item {
+    text-align: center;
+}
+
+.logos {
+    padding-bottom: 15px;
+    padding-left: 40px;
+}
+
+.logo4{
+    margin-left: 0;
+    padding-left: 0px;
+}
+
+.stars {
+    font-size: xx-large;
+    color: blue;
+    padding-left: 40px;
+}
+
+.Reviews {
+    padding-left: 40px;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+    
+}
