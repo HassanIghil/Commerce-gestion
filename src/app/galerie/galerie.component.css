@@ -1,125 +1,97 @@
-/* .galerie{
-    padding: 10px;
+* {
     margin: 0;
-    padding-bottom: 5%;
-}
-
-.galerie-header{
-    padding: 10% 0%  2% 40%;
-    color: rgb(0, 64, 160);
-    font-weight: bold;
-    font-size: 45px;
-}
-
-.galerie-header2{
-    padding:0% 18%  20px 10%;
-    padding-left: 18%;
-    color: rgb(0, 64, 160);
-    font-size: 18px;
-    text-align: center;
-    line-height: 40px;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.carouselExampleInterval{
-    display: flex;
-    flex-direction:flex flex-wrap ;
-    color: black;
-    align-items: center;
-    justify-content: center;
-}
-
-img{
-    margin: 0;
-    margin-right: 0;
-    padding-right: 20px ;
-    padding-left: 20px;
-    width: 100%;
-    height: 500px;
-}
-
-button{
-    background-color: ;
-    border: none;
     padding: 0;
-    margin: 0;
-    width: 50px;
-    text-align: center;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-
-
-
-.call-to-action{
-    min-width:200px ;
-    width:20%;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    background-color: rgb(0, 104, 145);
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    text-transform:capitalize;
+.slider {
+    width: calc(100% - 10px); /* Adjust width to account for padding on both sides */
+    height: 500px;
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Ensure figure positioning works correctly */
+    padding: 5px; /* Apply padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    
 }
 
-.call-to-action-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5%;
-}
-
-a{text-decoration: none;}
-
-a:visited{
-    color: white;
-    text-decoration: none;
-} */
-
-
-.galerie{
-    padding: 10px;
-    margin: 0;
-    padding-bottom: 5%;
-}
-
-
-.galerie-header{
-    padding: 10% 0%  2% 40%;
-    color: rgb(0, 64, 160);
-    font-weight: bold;
-    font-size: 45px;
-}
-
-.galerie-header2{
-    padding:0% 18%  20px 10%;
-    padding-left: 18%;
-    color: rgb(0, 64, 160);
-    font-size: 18px;
-    text-align: center;
-    line-height: 40px;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.carousel-item {
-    position: absolute;
-    top: 0;
+figure {
+    position: relative;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 600%; /* Since there are 6 slides, set to 600% */
+    animation: slide 25s infinite; /* Adjusted to cover all 6 slides */
+    display: flex; /* Flex layout to align children horizontally */
+    margin: 0; /* Reset margin */
 }
 
-img {
-    margin: 0;
-    padding-right: 20px;
-    padding-left: 20px;
+.slide {
+    padding:5px;
+    flex: 0 0 16.6666%; /* Adjusted width to 1/6th for 6 slides */
+}
+
+.slide img {
     width: 100%;
     height: 500px;
+    object-fit: cover; /* Ensures the image fills the slide area */
 }
+
+.slider:hover figure {
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+@keyframes slide {
+    0% { left: 0; }
+    16.66% { left: 0; } /* Show first slide */
+    33.33% { left: -100%; } /* Show second slide */
+    50% { left: -200%; } /* Show third slide */
+    66.66% { left: -300%; } /* Show fourth slide */
+    83.33% { left: -400%; } /* Show fifth slide */
+    100% { left: -500%; } /* Show sixth slide */
+}
+
+@media only screen and (max-width: 700px) {
+    .slider {
+        height: 300px; /* Adjusted height for 700px devices */
+        width: calc(100% - 10px); /* Adjust width to account for padding on both sides */
+    }
+    figure {
+        width: 600%; /* Maintain width for 6 slides */
+    }
+    .slide {
+        padding:5px;
+        flex: 0 0 16.6666%; /* Maintain width for 6 slides */
+    }
+    .slide img {
+        width: 100%; /* Full width within the slide */
+        height: auto; /* Adjust height proportionally */
+        object-fit: cover; /* Ensure the image covers the slide area */
+    }
+    button{
+        display:none;
+        /* width: 30px;
+        height:90px;
+        font-size: 20px; */
+    }
+
+    .call-to-action{
+        /* min-width:200px ;
+        padding:15px;
+        margin-bottom: 22px;
+        border-radius: 5px;
+        background-color: rgb(0, 104, 145);
+        color: white;
+        font-size: 19px;
+        font-weight: bold;
+        text-align: center;
+        text-transform:uppercase;
+        border: none; */
+    }
+
+    .call-to-action-title{
+        margin-bottom:12%;
+    }
+}
+
+
 
 /* Slider controls */
 button {
@@ -130,4 +102,52 @@ button {
     width: 50px;
     text-align: center;
     color: inherit; /* Ensure the text color is inherited from the parent */
+}
+
+
+.call-to-action{
+    min-width:200px ;
+    width:20%;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: rgb(0, 104, 145);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform:uppercase;
+    border: none;
+    cursor: pointer;
+    margin:2% 0 5% 0;
+}
+
+.call-to-action-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4%;
+}
+
+.galerie-header{
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1;
+    padding:60px;
+    margin:5%;
+    letter-spacing: -3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 104, 145);
+    margin-bottom: 0;
+}
+
+.galerie-header2{
+    font-size: 21px;
+    color: black;
+    padding-left: 4%;
+    padding-right : 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 3%;
 }

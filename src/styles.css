@@ -7,7 +7,7 @@
 
 
 html{
-    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 footer {
@@ -17,15 +17,39 @@ footer {
 }
 
 .demo-footer {
-    background-color: #000000;
-    color: rgb(255, 255, 255);
+    background-color: aliceblue;
+    color: black;
     text-align: center;
     padding: 25px 20px;
     font-size: 18px;
 }
 
 .scroll-top{
+    color:black;
     position: fixed;
     bottom: 20px;
     right: 20px;
+    align-content:center;
+    justify-content:center;
+    padding:8px;
+    height:40px;
+    width:40px;
+    border:2px solid black;
+    
+}
+
+
+@media only screen and (max-width: 700px){
+    .scroll-top{
+        color:black;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        align-content:center;
+        justify-content:center;
+        padding:8px;
+        height:40px;
+        width:40px;
+        border:2px solid black;
+    }
 }

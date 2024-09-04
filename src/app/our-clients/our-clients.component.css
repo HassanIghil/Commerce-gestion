@@ -11,6 +11,7 @@
 }
 
 .wrapper {
+  margin-bottom:8%;
   width: 90%;
   max-width: 1536px;
   margin-inline: auto;
@@ -87,4 +88,39 @@ h1 {
   text-align: center;
   justify-content: center;
   padding-right: 45px;
+}
+
+
+@media screen and (max-width: 700px){
+  h1{
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    padding-left:50px;
+  }
+  .wrapper {
+    margin-bottom:30%;
+    width: 70%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(120px * 9), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
 }

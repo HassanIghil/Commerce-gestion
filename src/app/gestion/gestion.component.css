@@ -1,7 +1,6 @@
 .gestion{
     margin: 0;
     padding: 0;
-    padding-top:10%;
     color: black;
     background-color: white;
 }
@@ -54,4 +53,65 @@
     padding-left: 100px;
     font-size: 40px;
     color: rgb(0, 64, 160);
+}
+
+
+@media screen and (max-width: 700px){
+    .gestion{
+        margin: 0;
+        padding: 0;
+        padding-top:10%;
+        color: black;
+        background-color: white;
+    }
+    
+    .header-title{
+        padding:20px;
+        color: rgb(0, 64, 160);
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    .sub-header{
+        padding:20px;
+        color: rgb(0, 64, 160);
+        font-size: 18px;
+        text-align: left;
+        line-height: 40px;
+        
+    }
+    .image-container{
+        display: flex;
+        flex-direction:column;
+        color: black;
+        padding-right: 18px;
+        padding-bottom: 70px;
+        margin:0;
+    }
+    
+    .text-place{
+        padding-top: 10px;
+        text-align:center;
+    }
+    
+    
+    .sub-gest-header{
+        padding-top:10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align:left;
+        color: rgb(17, 128, 197);
+        line-height: 30px;
+        font-size: 18px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .gest-header{
+        font-weight: bold;
+        margin: 10px;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 30px;
+        color: rgb(0, 64, 160);
+    }
 }

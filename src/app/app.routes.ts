@@ -6,9 +6,7 @@ import { HeaderComponent } from './header/header.component';
 
 export const routes: Routes = [
         
-        { path: 'demo', component: DemoComponent},
-
-    
+        { path: 'demo', component: DemoComponent },
 ];
 
 @NgModule({
