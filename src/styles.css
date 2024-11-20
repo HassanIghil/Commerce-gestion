@@ -14,6 +14,7 @@ footer {
     flex-shrink: 0;
     bottom: 0;
     width: 100%;
+    
 }
 
 .demo-footer {
@@ -22,6 +23,7 @@ footer {
     text-align: center;
     padding: 25px 20px;
     font-size: 18px;
+    padding:5%
 }
 
 .scroll-top{
@@ -35,6 +37,11 @@ footer {
     height:40px;
     width:40px;
     border:2px solid black;
+}
+
+.scroll-top:hover{
+    background-color:darkblue;
+    color:white;
     
 }
 
@@ -51,5 +58,9 @@ footer {
         height:40px;
         width:40px;
         border:2px solid black;
+    }
+
+    .demo-footer-text{
+        margin:20px
     }
 }

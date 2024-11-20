@@ -6,10 +6,11 @@
 }
 
 .header-title{
-    padding: 10% 18%  0 18%;
+    padding: 10% 18%  2% 18%;
     color: rgb(0, 64, 160);
     font-weight: bold;
-    font-size: 45px;
+    font-size: 50px;
+    text-align: center;
 }
 
 .sub-header{
@@ -43,7 +44,8 @@
     line-height: 30px;
     font-size: 18px;
     font-family:Arial, Helvetica, sans-serif;
-    
+    font-size:22px;
+    line-height:50px
 
 
 }
@@ -53,6 +55,9 @@
     padding-left: 100px;
     font-size: 40px;
     color: rgb(0, 64, 160);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom:10px
 }
 
 

@@ -6,17 +6,18 @@
 <header>
     <div class="head">
         <a href="/" routerLinkActive="active" class="logo">
-            <img src="icon.png" width="100px" alt="Logo">
+            <img src="icon.png" loading="lazy" width="100px" alt="Logo">
         </a>
 
         <input type="checkbox" id="check">
         <label for="check" class="icons">
-            <svg id="menu-icon" class="w-11 h-11 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 24 24">
+            <svg id="menu-icon" class="w-11 h-11 text-white-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" loading="lazy" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
             </svg>
-            <svg id="close-icon" class="w-11 h-11 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <svg id="close-icon" class="w-11 h-11 text-white-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" loading="lazy" width="24" height="24" fill="none"
+                viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M6 18 17.94 6M18 18 6.06 6" />
             </svg>
@@ -27,11 +28,12 @@
 
         <nav class="navbar">
             <a href="/" routerLinkActive="active" style="--i:o;">Home</a>
-            <a href="#Galerie" routerLinkActive="active" style="--i:1;">galerie</a>
+            <a href="#Nos-clients" routerLinkActive="active" style="--i:1;">Nos clients</a>
             <a href="#Gestion" routerLinkActive="active" style="--i:2;">Gestion</a>
             <a href="#Vente" routerLinkActive="active" style="--i:3;">Vente</a>
-            <a href="#Nos-clients" routerLinkActive="active" style="--i:4;">Nos clients</a>
-            <a href="#Home-demo" routerLinkActive="active" id="demo-link" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Demo</a>
+            <a href="#Galerie" routerLinkActive="active" style="--i:4;">galerie</a>
+            <a href="#Home-demo" routerLinkActive="active" style="--i:5" id="demo-link"
+                class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Demo</a>
         </nav>
     </div>
 </header>
@@ -39,55 +41,47 @@
 <body id="Home">
 
 
-    <div class="Carou h-screen">
-        <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
+
+    <div class="Carou">
+        <div id="default-carousel" class="relative w-full h-full" data-carousel="slide" data-carousel-interval="20000">
             <!-- Carousel wrapper -->
             <div class="relative h-full overflow-hidden rounded-lg">
                 <!-- Item 1 -->
-                <div class="hidden duration-900 ease-in-out" data-carousel-item>
-                    <img src="kok.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                        alt="...">
-                    <div class="absolute  text-white bg-transparent  ">
-                        <h1 id="h1text">GERMAN MOROCCAN  SOFTWARE COMPANY</h1>
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="kok.jpg" loading="lazy"
+                        class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <div class="absolute text-white bg-transparent">
+                        <h1 id="h1text">GERMAN MOROCCAN SOFTWARE COMPANY</h1>
                         <p id="h2text">Organisez votre travail et facilitez vos écritures comptables.</p>
                     </div>
                 </div>
                 <!-- Item 2 -->
-                <div class="hidden duration-900 ease-in-out" data-carousel-item>
-                    <img src="po.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                        alt="...">
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="po.jpg" loading="lazy"
+                        class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
                 <!-- Item 3 -->
-                <div class="hidden duration-900 ease-in-out" data-carousel-item>
-                    <img src="gy.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                        alt="...">
-                    <div class="absolute text-white bg-transparent  dds">
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="gy.jpg" loading="lazy"
+                        class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <div class="absolute text-white bg-transparent dds">
                         <h2 id="h1text2">Le Meilleur accompagnement pour vous servir</h2>
-                        <!-- <p id="h2text2"></p> -->
-                        <button class="demander w-40"><a href="#Home-demo">Demander une demo</a></button> 
+                        <button class="demander w-60 h-20"><a href="#Home-demo">Demander une demo</a></button>
+                        <button data-modal-target="pricing-modal" data-modal-toggle="pricing-modal"
+                            class="block demander w-60 h-20 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Choisir Votre Plan
+                        </button>
                     </div>
                 </div>
-                
             </div>
-            
-            <!-- Slider indicators -->
-            <div class="indecators absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                    data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                    data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                    data-carousel-slide-to="2"></button>
-            </div>
-            <button class="demander-phone btn bg-blue-500 text-white py-2 px-4 rounded"><a href="#Home-demo">Demander une demo</a></button>
-            <!-- Slider controls -->
+            <!-- Slider controls (next and previous buttons) -->
             <button type="button"
                 class="absolute top-80 start-0 z-30 flex items-center justify-center h-10 px-4 cursor-pointer group focus:outline-none"
                 data-carousel-prev>
                 <span
                     class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                     <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        xmlns="http://www.w3.org/2000/svg" loading="lazy" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M5 1 1 5l4 4" />
                     </svg>
@@ -100,7 +94,7 @@
                 <span
                     class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                     <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        xmlns="http://www.w3.org/2000/svg" loading="lazy" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />
                     </svg>
@@ -108,10 +102,123 @@
                 </span>
             </button>
         </div>
-
-        
-        
     </div>
+    
+
+
+
+
+    <div id="pricing-modal" tabindex="-1" aria-hidden="true"
+    class="hidden fixed inset-0 z-112  justify-center items-center w-full h-full bg-black bg-opacity-50">
+    <div class="relative p-4 w-full h-full max-w-none max-h-none max-md:w-[95%] lg:w-[90%] xl:w-[90%] max-md:h-[95%] top-12" id="modal-content">
+        <!-- Modal content -->
+        <div class="relative bg-[#fce5d8] rounded-lg shadow-lg dark:bg-gray-800">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-6 border-b dark:border-gray-600">
+                <h3 class="text-3xl font-bold text-gray-900 dark:text-white">Tarification</h3>
+                <button type="button"
+                    class="text-black hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm   justify-center w-7 h-7 ms-auto dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="pricing-modal">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                            d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+
+                <!-- Modal body with flex layout -->
+                <div class="p-6 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+                    <!-- Left side: Text and Button -->
+                    <div class="flex-1  md:text-left">
+                        <p id="text-pc"
+                            class="text-lg justify-start leading-relaxed text-gray-600 dark:text-gray-400 mb-6 pt-24 pb-40 pl-10 pr-10">
+                            Un tableau de prix aide les utilisateurs à sélectionner un plan adapté en différenciant simplement et clairement les caractéristiques et les prix des produits/services. Utilisez-le comme texte de support pour vos plans.
+                        </p>
+                        <button data-modal-hide="pricing-modal" id="btn-pc"
+                            class="w-full md:w-auto text-white ml-10 mr-2  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <a href="#Home-demo" >Choisir Votre Plan</a>
+                        </button>
+                        <button data-modal-hide="pricing-modal" id="btn-pc"
+                            class="w-full md:w-auto text-white  bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Close
+                        </button>
+                    </div>
+
+                    <!-- Right side: Pricing Cards -->
+                    <div class="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!-- Facturation plan -->
+                        <div class="rounded-lg shadow-lg bg-purple-100 p-6 text-center">
+                            <h3 class="text-xl font-bold text-purple-700 mb-4">Facturation</h3>
+                            <h2 class="text-5xl font-bold text-purple-800 mb-8">499Dh</h2>
+                            <ul class="list-none space-y-2 text-left">
+                                <li class="text-green-700">CRM</li>
+                                <li class="text-green-700">Tableau de bord</li>
+                                <li class="text-green-700">Personnalisable</li>
+                                <li class="text-green-700">Gestion Produits</li>
+                                <li class="text-green-700">Gestion Achats et Ventes</li>
+                                <li class="text-green-700">Rapports Standards</li>
+                                <li class="text-green-700">1 Accès Comptable</li>
+                            </ul>
+                        </div>
+
+                        <!-- Gestion Pro plan -->
+                        <div class="rounded-lg shadow-lg bg-blue-100 p-6 text-center">
+                            <h3 class="text-xl font-bold text-blue-700 mb-4">Gestion Pro</h3>
+                            <h2 class="text-5xl font-bold text-blue-800 mb-8">699Dh</h2>
+                            <ul class="list-none space-y-2 text-left">
+                                <li class="text-green-700">2 Utilisateurs inclus</li>
+                                <li class="text-green-700">Tout sur le pack Facturation</li>
+                                <li class="text-green-700">Gestion Places de marché</li>
+                                <li class="text-green-700">Intégrations E-commerce</li>
+                                <li class="text-green-700">Gestion Stock</li>
+                                <li class="text-green-700">Gestion des Commandes</li>
+                                <li class="text-green-700">Gestion des Livraisons</li>
+                            </ul>
+                        </div>
+
+                        <!-- Gestion Entreprise plan -->
+                        <div class="rounded-lg shadow-lg bg-orange-100 p-6 text-center">
+                            <h3 class="text-xl font-bold text-orange-700 mb-4">Gestion Entreprise</h3>
+                            <h2 class="text-5xl font-bold text-orange-800 mb-8">999Dh</h2>
+                            <ul class="list-none space-y-2 text-left">
+                                <li class="text-green-700">5 Utilisateurs inclus</li>
+                                <li class="text-green-700">Tout sur le pack Gestion Pro</li>
+                                <li class="text-green-700">Gestion des Dépenses</li>
+                                <li class="text-green-700">Gestion des Ressources Humaines</li>
+                                <li class="text-green-700">Gestion des Projets</li>
+                                <li class="text-green-700">Gestion des Stocks</li>
+                                <li class="text-green-700">Gestion des Achats</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button data-modal-hide="pricing-modal" id="btn-phone"
+                    class=" md:w-auto text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <a href="#Home-demo" class="text-white">Choisir Votre Plan</a>
+                </button>
+                <button data-modal-hide="pricing-modal" id="btn-phone"
+                    class="w-full mb-20 md:w-auto text-white  bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -126,46 +233,67 @@
     </div> -->
 
 </body>
-
 <footer>
     <div class="footer-container">
-        <div class="logo-item" class="lines">
-            <div class="logos"><img src="logo-placeholder.png" alt="Logo 1"></div>
+        <div class="logo-item lines">
+            <div class="logos logo1">
+                <img src="logo-placeholder.png" loading="lazy" alt="Logo 1">
+            </div>
             <br>
             <span class="stars" aria-label="5 stars">★★★★★</span>
             <p class="Reviews">100+ Reviews</p>
         </div>
-        
 
-
-        <div class="logo-item" class="lines">
-            <div class="logos"><img src="logo-placeholder-2.png" alt="Logo 2"></div>
+        <div class="logo-item lines">
+            <div class="logos logo2">
+                <img src="logo-placeholder-2.png" loading="lazy" alt="Logo 2">
+            </div>
             <br>
             <span class="stars">★★★★&star;</span>
             <p class="Reviews">30+ Reviews</p>
         </div>
 
-        <div class="logo-item" class="lines">
-            <div class="logos"><img src="logo-placeholder-3.png" alt="Logo 3"></div>
+        <div class="logo-item lines">
+            <div class="logos ">
+                <img src="logo-placeholder-3.png" loading="lazy" alt="Logo 3">
+            </div>
             <br>
             <span class="stars">★★★★★</span>
             <p class="Reviews">50+ Reviews</p>
         </div>
 
-        <div class="logo-item ">
-            <div class="logos"><img src="logo-placeholder-4.png" alt="Logo 4"></div>
+        <div class="logo-item">
+            <div class="logos logo4">
+                <img src="logo-placeholder-4.png" loading="lazy" alt="Logo 4">
+            </div>
             <br>
             <span class="stars">★★★★★</span>
             <p class="Reviews">50+ Reviews</p>
-            
         </div>
+    </div>
 
-        </div>
-
-      <div class="scroll-top">
-            <a href="#Home"><button class="scroll-top-button"><i class="bi bi-arrow-up-square-fill"></i></button></a>
-        </div> 
 </footer>
 
+<script>
+    // Get the modal and modal content elements
+const modal = document.getElementById('pricing-modal');
+const modalContent = document.getElementById('modal-content');
 
+// Add event listener for clicks on the window
+window.onclick = function(event) {
+    // Check if the click is outside the modal content
+    if (event.target === modal) {
+        // Hide the modal by adding the 'hidden' class
+        modal.classList.add('hidden');
+    }
+};
+
+// Optional: Close modal on pressing 'Escape' key
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        modal.classList.add('hidden');
+    }
+});
+
+</script>
 </html>

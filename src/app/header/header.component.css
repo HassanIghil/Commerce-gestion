@@ -16,6 +16,11 @@
   height: 100vh;
 }
 
+.Carou.hover\:pause:hover .carousel-item {
+  animation-play-state: paused !important;
+}
+
+
 .head {
   position: fixed;
   top: 0;
@@ -65,6 +70,7 @@
   font-weight: 600;
   text-decoration: none;
   color: white;
+  margin-left: 40px;
 }
 
 .navbar a {
@@ -115,6 +121,32 @@
 
 
 
+#pricing-modal{
+  z-index:112;
+  text-align: center;
+  top:0%;
+  position:fixed;
+
+
+}
+
+button.bg-blue-500 {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button.bg-blue-500:hover {
+  background-color: #2e6da4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
 
 .dds button {
   appearance: none;
@@ -140,6 +172,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-right:2%
 }
 
 .dds button:hover {
@@ -244,6 +277,7 @@ footer {
   display: none;
 }
 .logo-item {
+  padding-left:5%;
   text-align: center;
 }
 
@@ -280,9 +314,17 @@ button:hover {
   display: none;
 }
 
+.demander-phone2{
+  display:none;
+}
+
+#btn-phone{
+  display:none;
+}
+
 @media screen and (max-width: 992px) {
   .head {
-    padding: 1.3rem 5%;
+    padding: 1.1rem 5%;
   }
   .dds button {
     font-size: 1.5rem;
@@ -303,8 +345,40 @@ button:hover {
     scroll-behavior: smooth;
   } */
 
+  #btn-phone{
+    display:inline-block;
+    width:90%;
+    padding-top:5%;
+    padding-bottom:5%;
+    color: white;
+    font-size:20px;
+
+    border-radius: 8px;
+    text-align: center;
+    margin:0;
+    margin-bottom:10px;
+    justify-content:center;
+
+  }
+  #text-pc{
+    padding:0;
+    justify-content: flex-start;
+  }
   .dds button {
     display: none;
+  }
+
+  #btn-pc{
+    display:none;
+  }
+
+  #pricing-modal{
+    z-index:112;
+    text-align: center;
+    top:0%;
+    position:absolute;
+  
+  
   }
 
   Carou {
@@ -388,6 +462,8 @@ button:hover {
   
 
   .logo {
+    padding:0;
+    margin:0;
     width: 70px;
     height: 50px;
 
@@ -403,7 +479,7 @@ button:hover {
 
   .demander-phone {
     position: absolute;
-    top: 83%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -425,8 +501,33 @@ button:hover {
     cursor: pointer;
     display: inline-block;
   }
+  .demander-phone2 {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width:60%;
+    background-color: #1d4ed8;
+    color: white;
+    font-size:20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 40;
+    appearance: none;
+    background-color: dark;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: darkblue 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    height:60px;
+  }
 
-  .demander-phone:hover {
+  .demander-phone2:hover {
     background-color: rgba(7, 245, 100);
     box-shadow: green 0 -12px 6px inset;
     font-weight: bold;
@@ -480,7 +581,6 @@ button:hover {
   top:-10;
   position: absolute;
   padding-right: 20%;
-=
   text-align: left;
   padding-bottom: 20px;
   font-size: 22px;
@@ -492,7 +592,7 @@ button:hover {
 
   footer {
     margin: 0;
-    padding: 50px 0;
+    padding: 50px 0px;
     background-color: aliceblue;
     overflow-x: hidden;
     padding-bottom: 40px;
@@ -502,27 +602,55 @@ button:hover {
     display: inline-block;
     padding: 0;
     margin: 0;
+    width: 100%; /* Ensure it spans the full width */
   }
 
-  .logo-item {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-  }
 
-  .logos {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.logo-item {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.logos {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%; /* Ensure it spans the full width */
+}
+
+.logo1{
+  width:50%;
+  height:50%;
+  margin-left:25%;
+}
+
+.logo2{
+  width:50%;
+  height:40%;
+  margin-left:25%;
+}
+
+.logo4{
+  width:52%;
+  height:50%;
+  margin-left:25%;
+}
+
+
+
 
   
   .Reviews{
     align-items: center;
     text-align:center;
     justify-content:center;
+    padding-bottom:20px;
   }
   .stars{
     color: #f7dc6f;
@@ -531,6 +659,102 @@ button:hover {
   }
 
 
-  .icons {
-  }
+  
+}
+
+
+
+.container {
+  display: flex;
+  gap: 30px;
+  background-color: #fdc;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card {
+  background-color: #e9f0ff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;  
+}
+
+.pricing-card h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pricing-card .price {
+  font-size: 48px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.pricing-card .features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-card .features li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pricing-card .features li i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.pricing-card button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+.pricing-card button:hover {
+  background-color: #0056b3;
+}
+
+.pricing-card .cta {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pricing-card .cta a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.pricing-card .cta a:hover {
+  text-decoration: underline;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+li{
+  list-style: none;
+  color:black;
+  font-weight:bold;
 }
